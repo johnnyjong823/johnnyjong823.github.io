@@ -1,6 +1,6 @@
 $(function () {
     console.log("Test");
-    $('#close').click(function () { location.href = "#js-close" })
+    $('#close').click(function () { location.href = "#js-nfc" })
 })
 
 var callJS = function (text) {
