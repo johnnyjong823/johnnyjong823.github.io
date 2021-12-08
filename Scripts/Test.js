@@ -9,5 +9,6 @@ var FlutterNFC = function (text) {
 }
 
 var FlutterGetImage = function (base64) {
+    alert(1);
     $('#myImg').attr('src', base64);
 }
