@@ -1,6 +1,6 @@
 $(function () {
     console.log("Test");
-    $('#close').click(function () { location.href = "#js-nfc" })
+    $('#close').click(function () { location.href = "#js-getimage" })
 })
 
 var FlutterNFC = function (text) {
