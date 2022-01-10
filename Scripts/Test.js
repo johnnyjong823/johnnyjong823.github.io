@@ -3,8 +3,8 @@ $(function () {
     $('#close').click(function () { location.href = "#js-cameragetimage" })
 
 
-    $('#Mode1').click(function () { location.href = "#js-changeiconDark" })
-    $('#Mode2').click(function () { location.href = "#js-changeiconLight" })
+    $('#Mode1').click(function () { location.href = "#js-changeiconMode1" })
+    $('#Mode2').click(function () { location.href = "#js-changeiconMode2" })
     $('#Mode3').click(function () { location.href = "#js-changeiconFall" })
     $('#Mode4').click(function () { location.href = "#js-changeiconWinter" })
     $('#Init').click(function () { location.href = "#js-changeicon" })
