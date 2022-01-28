@@ -3,20 +3,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>你好，GitHub</title>
+  <title>Flutter測試網頁</title>
 </head>
 
 <body>
-  <h1>覺得厲害</h1>
-  <button type="button" id="close">關閉APP</button>
+  <h1>關閉APP</h1>
+  <button type="button" id="btnClose">關閉APP</button>
+  <hr>
+
+  <h1>網頁測試</h1>
+  <input type="text" id="txtUrl" value="www.google.com" />
+  <button type="button" id="btnURL">前往網頁</button>
+  <hr>
+
+  <h1>取得裝置資訊</h1>
+  <textarea rows="5" id="txtDevice"></textarea>
+  <button type="button" id="btnDevice">取得裝置資訊</button>
+  <hr>
+
+  <h1>螢幕亮度</h1>
+  <input type="number" max="1" min="0" id="txtScreen" value="1" />
+  <button type="button" id="btnSreen">調整螢幕亮度</button>
+  <hr>
+
+  <h1>Qrcode Scanner--barcode_scan2</h1>
+  <button type="button" id="btnScan">掃描</button>
+  <hr>
+
+  <h1>Qrcode Scanner--ai_barcode</h1>
+  <button type="button" id="btnScan2">掃描</button>
+  <hr>
+
+  <h1>更換Icon</h1>
   <button type="button" id="Mode1">Mode1 Icon</button>
   <button type="button" id="Mode2">Mode2 Icon</button>
   <button type="button" id="Mode3">Mode3 Icon</button>
   <button type="button" id="Mode4">Mode4 Icon</button>
   <button type="button" id="Init">原本APPIcon</button>
+  <hr>
 </body>
 
 <script src="Scripts/jquery-3.1.1.min.js"></script>
 <script src="Scripts/Test.js"></script>
+<script src="Scripts/FlutterCommon.js"></script>
 
 </html>
