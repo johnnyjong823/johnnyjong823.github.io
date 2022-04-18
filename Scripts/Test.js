@@ -1,5 +1,7 @@
 $(function () {
     console.log("Test");
+
+    $('#txtUserAgent').val(navigator.userAgent);
     $('#btnClose').click(function () { location.href = "#js-close" })
     $('#btnURL').click(function () {
         var url = $('#txtUrl').val();
