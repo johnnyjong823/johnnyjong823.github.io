@@ -1,6 +1,14 @@
 $(function () {
     console.log("Test");
 
+
+    var ua = navigator.userAgent;
+    var chrome = ua.match(/Chrome\/([\d.]+)/) || ua.match(/CriOS\/([\d.]+)/);
+    var webview = !chrome && ua.match(/(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/);
+
+    if (webview)alert('true');
+    else alert('false');
+
     $('#txtUserAgent').val(navigator.userAgent);
     $('#btnClose').click(function () { location.href = "#js-close" })
     $('#btnURL').click(function () {
