@@ -6,9 +6,23 @@ $(function () {
 
     $('#txtUserAgent').val(navigator.userAgent);
     $('#btnClose').click(function () { location.href = "#js-close" })
+    $('#btnCamera').click(function () { location.href = "#js-cameragetimage" })
+    $('#btnLibrary').click(function () { location.href = "#js-getimage" })
     $('#btnURL').click(function () {
         var url = $('#txtUrl').val();
         location.href = `#js-url${url}`;
+    });
+    $('#btnTel').click(function () {
+        var tel = $('#txtTel').val();
+        location.href = `#js-tel${tel}`;
+    });
+    $('#btnShare').click(function () {
+        var share = $('#txtShare').val();
+        location.href = `#js-share${share}`;
+    });
+    $('#btnToast').click(function () {
+        var text = $('#txtToast').val();
+        location.href = `#js-toast${text}`;
     })
     $('#btnDevice').click(function () {
         location.href = "#js-ver";
@@ -18,25 +32,45 @@ $(function () {
                    裝置型號:${Flutter_Model} \n`
 
         $('#txtDevice').val(str);
-    })
+    });
+
+    $('#btnFcmToken').click(function () {
+        location.href = "#js-fcmtoken";
+
+        var str = `${Flutter_FCMToken}`
+
+        $('#txtFcmToken').val(str);
+    });
+
+    $('#btnAppVer').click(function () {
+        location.href = "#js-appver";
+
+        var str = `${Flutter_AppVerision}`
+
+        $('#txtAppVer').val(str);
+    });
 
     $('#btnSreen').click(function () {
         var screen = $('#txtScreen').val();
         location.href = `#js-screen${screen}`;
     })
-    $('#btnScan').click(function () { location.href = "#js-barcode" })
-    $('#btnScan2').click(function () { location.href = "#js-barcode" })
+    $('#btnScan').click(function () { location.href = "#js-barcode" });
+    $('#btnScan2').click(function () { location.href = "#js-barcode" });
 
 
 
+    $('#Direction1').click(function () { location.href = "#js-directionUP" });
+    $('#Direction2').click(function () { location.href = "#js-directionRIGHT" });
+    $('#Direction3').click(function () { location.href = "#js-directionLEFT" });
+    $('#Direction4').click(function () { location.href = "#js-directionDOWN" });
 
 
 
-    $('#Mode1').click(function () { location.href = "#js-changeiconMode1" })
-    $('#Mode2').click(function () { location.href = "#js-changeiconMode2" })
-    $('#Mode3').click(function () { location.href = "#js-changeiconFall" })
-    $('#Mode4').click(function () { location.href = "#js-changeiconWinter" })
-    $('#Init').click(function () { location.href = "#js-changeicon" })
+    $('#Mode1').click(function () { location.href = "#js-changeiconMode1" });
+    $('#Mode2').click(function () { location.href = "#js-changeiconMode2" });
+    $('#Mode3').click(function () { location.href = "#js-changeiconFall" });
+    $('#Mode4').click(function () { location.href = "#js-changeiconWinter" });
+    $('#Init').click(function () { location.href = "#js-changeicon" });
 
 })
 
