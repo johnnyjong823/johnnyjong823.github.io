@@ -72,9 +72,16 @@ $(function () {
     $('#Mode4').click(function () { location.href = "#js-changeiconWinter" });
     $('#Init').click(function () { location.href = "#js-changeicon" });
 
-    $('#OpeniOSScheme').click(function(){
+    $('#OpeniOSSchemeTest').click(function(){
         var ifr = document.createElement("iframe");
         ifr.src = 'pingtungfytest://request=test&arguments=success';
+        ifr.style.display = "none";
+        document.body.appendChild(ifr);
+        alert("打開App");
+    })
+    $('#OpeniOSScheme').click(function(){
+        var ifr = document.createElement("iframe");
+        ifr.src = 'pingtungfy://request=test&arguments=success';
         ifr.style.display = "none";
         document.body.appendChild(ifr);
         alert("打開App");
